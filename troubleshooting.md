@@ -132,23 +132,3 @@ you don't have a proper JavaScript runtime. To solve this, either install
 On Debian or Ubuntu, you may need to add `/var/lib/gems/1.8/bin/` to your path
 in order to have the `jekyll` executable be available in your Terminal.
 
-## Base-URL Problems
-
-If you are using base-url option like:
-
-{% highlight bash %}
-jekyll serve --baseurl '/blog'
-{% endhighlight %}
-
-… then make sure that you access the site at:
-
-{% highlight bash %}
-http://localhost:4000/blog/index.html
-{% endhighlight %}
-
-It won’t work to just access:
-
-{% highlight bash %}
-http://localhost:4000/blog
-{% endhighlight %}
-
